@@ -14,10 +14,10 @@ spec:
     spec:
       containers:
       - name: ui-container
-        image: pokfinner/basic3tier-ui:latest
+        image: shishir165/basic3tier-ui:latest
         ports:
         - containerPort: 80
-        # Optional environment variable if using dynamic config
+        # Optional environment variable if you're configuring the API URL dynamically
         # env:
         # - name: API_URL
         #   value: "http://api-service"

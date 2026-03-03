@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: api-container
-        image: pokfinner/basic3tier-api:latest
+        image: shihsir165/basic3tier-api:latest
         ports:
         - containerPort: 80
         env:

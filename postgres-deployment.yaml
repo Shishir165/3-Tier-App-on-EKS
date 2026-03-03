@@ -21,7 +21,7 @@ spec:
         - name: POSTGRES_USER
           value: "postgres"
         - name: POSTGRES_PASSWORD
-          value: "admin123"
+          value: "admin123"  # do NOT use in production
         ports:
         - containerPort: 5432
         volumeMounts:
@@ -42,7 +42,8 @@ spec:
   resources:
     requests:
       storage: 5Gi
-  storageClassName: gp2
+  # Azure typically uses storageClassName: "default" or "managed" 
+  storageClassName: default
 ---
 apiVersion: v1
 kind: Service
