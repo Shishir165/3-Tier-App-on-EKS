@@ -1,7 +1,7 @@
 FROM nginx:alpine
 
 # We'll need 'sed' for the runtime substitution
-RUN apk add --no-cache bash
+#RUN apk add --no-cache bash
 
 WORKDIR /usr/share/nginx/html
 
@@ -13,5 +13,5 @@ COPY . .
 #RUN chmod +x /entrypoint.sh
 
 EXPOSE 80
-ENTRYPOINT ["/entrypoint.sh"]
-CMD ["nginx", "-g", "daemon off;"]
+#ENTRYPOINT ["/entrypoint.sh"]
+#CMD ["nginx", "-g", "daemon off;"]
